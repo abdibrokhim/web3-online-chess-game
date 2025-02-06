@@ -1,3 +1,8 @@
 export const llgContractAddress = "0x0e04Ad5f9a40ddfe82ac533C9D5284Fb3C72BcAa";
 export const llgRewardContractAddress = "0x9274011471a1Fac4fD5304fc1f8a536150057df7";
-export const chainId = 0x61;
+export const chainId = 0x01;
+
+// Notes:
+// Ethereum Mainnet: 0x01
+// Polygon (MATIC): 0x89
+// Ethereum Classic: 0x3d

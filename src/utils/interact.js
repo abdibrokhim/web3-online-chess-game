@@ -15,7 +15,7 @@ export const connectWallet = async () => {
     try {
       const chain = await window.ethereum.request({ method: 'eth_chainId' })
       console.log("log: ", chain, parseInt(chain, 16), chainId, parseInt(chain, 16) === chainId)
-      if (parseInt(chain, 16) == chainId) {
+      if (parseInt(chain, 16) === parseInt(chainId, 16)) {
         const addressArray = await window.ethereum.request({
           method: 'eth_requestAccounts',
         })
@@ -34,7 +34,7 @@ export const connectWallet = async () => {
       } else {
         window.ethereum.request({
           method: 'wallet_switchEthereumChain',
-          params: [{ chainId:chainId }],
+          params: [{ chainId: chainId }],
         })
         return {
           address: "",
