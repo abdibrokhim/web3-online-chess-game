@@ -1,4 +1,8 @@
-# Installation Guide
+## [IMPORANT_CHECK.md](IMPORTANT_CHECK.md)
+
+## [Issues](https://github.com/abdibrokhim/web3-online-chess-game/issues)
+
+### Installation Guide
 Node version is 16.20.2
 ```
 nvm install 16.20.2
